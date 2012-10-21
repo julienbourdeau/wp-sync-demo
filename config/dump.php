@@ -2,6 +2,7 @@
 include 'config.php';
 
 $path = __DIR__ . SEP .".." . SEP . ".." . SEP . "wp-config.php";
+include $path;
 
 
 function backup_tables($host, $user, $pass, $name, $tables = '*')
