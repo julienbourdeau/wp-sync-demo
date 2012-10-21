@@ -1,6 +1,5 @@
 <?php
-$path = __DIR__ . "\..\..\wp-config.php";
-echo __DIR__; die();
+$path = __DIR__ . SEP .".." . SEP . ".." . SEP . "wp-config.php";
 //echo $path; die();
 
 include $path;
@@ -58,7 +57,8 @@ function backup_tables($host,$user,$pass,$name,$tables = '*')
   }
   
   //save file
-  $handle = fopen('database/database.sql','w+');
+  $database_file = __FILE__ . SEP . 'database.sql';
+  $handle = fopen( $database_file ,'w+');
   fwrite($handle,$return);
   fclose($handle);
 }
