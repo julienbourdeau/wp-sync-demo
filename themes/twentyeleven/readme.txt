@@ -1,5 +1,1 @@
-= TWENTY ELEVEN =
-
-* by the WordPress team, http://wordpress.org/
-
-== ABOUT TWENTY ELEVEN ==
+Here are modification to test the pre-commit hook
