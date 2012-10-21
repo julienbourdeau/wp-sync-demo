@@ -1,5 +1,6 @@
 <?php
 $path = __DIR__ . "\..\..\wp-config.php";
+echo __DIR__; die();
 //echo $path; die();
 
 include $path;
