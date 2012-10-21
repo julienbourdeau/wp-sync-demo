@@ -57,7 +57,7 @@ function backup_tables($host,$user,$pass,$name,$tables = '*')
   }
   
   //save file
-  $handle = fopen('database.sql','w+');
+  $handle = fopen('database/database.sql','w+');
   fwrite($handle,$return);
   fclose($handle);
 }
