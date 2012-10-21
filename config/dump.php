@@ -5,7 +5,7 @@ $path = __DIR__ . SEP .".." . SEP . ".." . SEP . "wp-config.php";
 include $path;
 
 
-function backup_tables($host, $user, $pass, $name, $tables = '*')
+function your_prefix_backup_tables($host, $user, $pass, $name, $tables = '*')
 {
   
   $link = mysql_connect($host,$user,$pass);
@@ -62,4 +62,4 @@ function backup_tables($host, $user, $pass, $name, $tables = '*')
 }
 
 
-backup_tables(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+your_prefix_backup_tables(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
